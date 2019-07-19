@@ -52,7 +52,7 @@ body, html {
 }
 </style>
 
-<body>
+<body style="background: black">
 
   <!-- Navbar (sit on top) -->
   <div class="w3-top">
@@ -94,7 +94,7 @@ body, html {
     <p>So I finally decided to make a portofolio for my life-long hobby, career and major interest - programming!</p>
     <div class="w3-row">
       <div class="w3-col m6 w3-center w3-padding-large">
-        <p><b><i class="fa fa-user w3-margin-right"></i>Denis Chiriac<span class="w3-hide-small">[asm0day]</span></b></p><br>
+        <p><b><i class="fa fa-user w3-margin-right"></i>Denis Chiriac<span class="w3-hide-small"> | asm0day</span></b></p><br>
         <img src="/w3images/avatar_hat.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me"
           width="500" height="333">
       </div>
@@ -112,21 +112,25 @@ body, html {
       </div>
     </div>
     <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
-    <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+    <p class="w3-wide"><img src="/w3images/unity.png" style="width: 16px;height: 16px; margin-right: 10px;"/>Unity</p>
     <div class="w3-light-grey">
       <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
     </div>
     <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
     <div class="w3-light-grey">
-      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+    </div>
+    <p class="w3-wide"><img src="/w3images/react-native.png" style="width: 16px;height: 16px; margin-right: 10px;"/>React Native</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">80%</div>
     </div>
     <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
     <div class="w3-light-grey">
-      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
     </div>
   </div>
 
-  <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <!-- <div class="w3-row w3-center w3-dark-grey w3-padding-16">
     <div class="w3-quarter w3-section">
       <span class="w3-xlarge">14+</span><br>
       Partners
@@ -143,7 +147,7 @@ body, html {
       <span class="w3-xlarge">150+</span><br>
       Meetings
     </div>
-  </div>
+  </div> -->
 
   <!-- Second Parallax Image with Portfolio Text -->
   <div class="bgimg-2 w3-display-container w3-opacity-min">
@@ -155,47 +159,117 @@ body, html {
   <!-- Container (Portfolio Section) -->
   <div class="w3-content w3-container w3-padding-64" id="portfolio">
     <h3 class="w3-center">MY WORK</h3>
-    <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them
-        bigger</em></p><br>
+    <p class="w3-center"><em>Here are some of the projects I was involved in.<br> Click on the images to make them bigger</em></p><br>
 
-    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <!-- HOPA -->
     <div class="w3-row-padding w3-center">
+      <div class="w3-col m6">
+        <img src="/w3images/p1a.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Brink of Consciousness: Lonely Hearts Murders<br>C++ | HOPA<br><a href='https://www.bigfishgames.com/games/8000/brink-of-consciousness-the-lonely-hearts-murd/'>Go to store</a>">
+      </div>
+
+      <div class="w3-col m6">
+        <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Nearwood Collector's Edition<br>C++ | HOPA<br><a href='https://www.bigfishgames.com/games/8152/nearwood/'>Go to store</a>">
+      </div>     
+    </div>
+
+    <!--Shadow Seekers-->
+
+    <p class="w3-center">
+      <br><em>Shadow seekers<br>A Free to play RPG with online multiplayer elements<br>Unity | iOS | Android | Multiplayer</em>
+    </p>
+
+    <div class="w3-row-padding w3-center w3-section">
+
       <div class="w3-col m3">
-        <img src="/w3images/p1a.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+        <img src="/w3images/screen-0.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Game launch screen">
       </div>
 
       <div class="w3-col m3">
-        <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+        <img src="/w3images/screen-2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Lots of creatures, each having specific stats and abilities">
       </div>
 
       <div class="w3-col m3">
-        <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+        <img src="/w3images/screen-7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="You control your heroes and use them to win the battle">
       </div>
 
       <div class="w3-col m3">
-        <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+        <img src="/w3images/screen-11.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="At the end of a raid you must face a boss">
       </div>
+    </div>
+
+    <!--Shadow Seekers-->
+    <p class="w3-center">
+      <br><em>Project CyberPat<br><i>(working title, in development)</i><br>Unity | Desktop | iOS | Android | Multiplayer</em>
+    </p>
+
+    <div class="w3-row-padding w3-center w3-section">
+
+      <div class="w3-col m6">
+        <img src="/w3images/cyberpat-3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Drive to your next destination">
+      </div>
+
+      <div class="w3-col m6">
+        <img src="/w3images/cyberpat-5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Lots of interaction and many ways of handling things">
+      </div>
+
     </div>
 
     <div class="w3-row-padding w3-center w3-section">
-      <div class="w3-col m3">
-        <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+
+      <div class="w3-col m6">
+        <img src="/w3images/cyberpat-2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Pixelart look and feel">
       </div>
 
-      <div class="w3-col m3">
-        <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+      <div class="w3-col m6">
+        <img src="/w3images/cyberpat-4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Unique Cyberpunk style">
       </div>
-
-      <div class="w3-col m3">
-        <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
-      </div>
-
-      <div class="w3-col m3">
-        <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
-      </div>
-      <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
     </div>
-  </div>
+
+    <!--Rage run-->
+    <p class="w3-center">
+      <br><em>Project Ragerun<br><i>(working title, in development)</i><br>Unity | Desktop</em>
+    </p>
+
+    <div class="w3-row-padding w3-center w3-section">
+
+      <div class="w3-col m4">
+        <img src="/w3images/ragerun-1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A 2d side-scrooling pixelart runner<br><small>Unfortunately can not credit the character's painter. Couldn't find the source.<br>If you are drew it - please contact me!</small>">
+      </div>
+
+      <div class="w3-col m4">
+        <img src="/w3images/ragerun-2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Craft, upgrade, buy and sell equipment">
+      </div>
+
+      <div class="w3-col m4">
+          <img src="/w3images/ragerun-3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A classic runner with ultiple layers of gameplay">
+        </div>
+
+    </div>
+
+    <!--Cowcasino-->
+    <p class="w3-center">
+      <br><em>Project Hustle Farm<br><i>(working title, in development)</i><br>Unity | iOS | Android</em>
+    </p>
+
+    <div class="w3-row-padding w3-center w3-section">
+
+      <div class="w3-col m3">
+        <img src="/w3images/cowcasino-1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Cartoon-like art style">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="/w3images/cowcasino-2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Try your luck on the slot machine.">
+      </div>
+
+      <div class="w3-col m3">
+          <img src="/w3images/cowcasino-3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Buy, level-up your creatures and earn money.">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="/w3images/cowcasino-4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Multiple locations to keep you engaged">
+      </div>
+
+    </div>
 
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
@@ -224,24 +298,15 @@ body, html {
       </div>
       <div class="w3-col m8 w3-panel">
         <div class="w3-large w3-margin-bottom">
-          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
-          <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
-          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+          <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Puerto de la Cruz, Canary Islands, Spain<br>
+          <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +34 666389341<br>
+          <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: denis.chiriac@mail.com<br>
         </div>
         <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-            </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-            </div>
-          </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-right w3-section" type="submit">
+        
+          <a class="w3-button w3-black w3-section" href="mailto: denis.chiriac@gmail.com">
             <i class="fa fa-paper-plane"></i> SEND MESSAGE
-          </button>
+          </a>
         </form>
       </div>
     </div>
@@ -251,12 +316,10 @@ body, html {
   <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
     <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
     <div class="w3-xlarge w3-section">
-      <i class="fa fa-facebook-official w3-hover-opacity"></i>
-      <i class="fa fa-instagram w3-hover-opacity"></i>
-      <i class="fa fa-snapchat w3-hover-opacity"></i>
-      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-      <i class="fa fa-twitter w3-hover-opacity"></i>
-      <i class="fa fa-linkedin w3-hover-opacity"></i>
+      <a href="https://www.facebook.com/denis.chiriac.v"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+      <a href="https://www.instagram.com/asm0day"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href="https://twitter.com/asm0day"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+      <a href="https://www.linkedin.com/in/denis-chiriac-3175156a/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
     </div>
     <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
   </footer>
