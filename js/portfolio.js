@@ -53,25 +53,25 @@ var portfolio = {
             name: 'Unity',
             exp: '> 10 years',
             value: 99,
-            icon: 'unity.png'
+            //icon: 'unity.png'
         },
         {
             name: 'Photoshop',
             exp: '> 10 years',
             value: 90,
-            icon: 'photoshop.png'
+            //icon: 'photoshop.png'
         },
         {
             name: 'Flutter',
             exp: '> 1 year(s)',
             value: 60,
-            icon: 'flutter.png'
+            //icon: 'flutter.png'
         },
         {
             name: 'Blender',
             exp: '> 1 year(s)',
-            value: 20,
-            icon: 'blender.png'
+            value: 50,
+            //icon: 'blender.png'
         },
     ],
     games: {

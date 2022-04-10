@@ -3,13 +3,13 @@ function buildGame(game, height = 'height: 450px;', cls = 'm3')
 {
     var colImg = (fileName) => {
         return `<div class="w3-col ${cls}">
-        <img src="${fileName}" style="width:100%;${height}object-fit: cover;" onclick="onClick(this)" class="w3-hover-opacity" >
+        <img src="${fileName}" style="width:100%;object-fit: cover;" onclick="onClick(this)" class="w3-hover-opacity" >
       </div>`;
     }
 
     var colVid = (fileName) => {
         return `<div class="w3-col ${cls}">
-        <video class="w3-hover-opacity" autoplay muted loop style="width:100%;${height}object-fit: cover;" onclick="onClick(this)" ><source src="${fileName}" type="video/mp4"></video>
+        <video class="w3-hover-opacity" autoplay muted loop style="width:100%;object-fit: cover;" onclick="onClick(this)" ><source src="${fileName}" type="video/mp4"></video>
       </div>`;
     }
 
@@ -66,23 +66,26 @@ function buildGame(game, height = 'height: 450px;', cls = 'm3')
 
 window.addEventListener('DOMContentLoaded', event => {
     
+    // TITLE
     $( "#github" ).text(portfolio.github);
 
+    // ABOUT
     portfolio.description.forEach(desc => {
         $( "#about" ).append(`<p>${desc}</p>`);
     });
 
+    // CONTACTS
     $( "#email2" ).text(portfolio.contact.email);
-    $( "#email3" ).attr('href', `mailto: ${portfolio.contact.email}`);
-    
-    $( "#address" ).text(portfolio.contact.address);
+    $( "#email3" ).attr('href', `mailto: ${portfolio.contact.email}`);    
+    $( "#address" ).text(portfolio.contact.address);    
     $( "#phone" ).text(portfolio.contact.phone);
 
+    // LINKS
     $( "#links" ).append(portfolio.contact.links.map(link => `<a href="${link.url}"><i class="fa ${link.icon} w3-hover-opacity"></i></a>`).join('\n') )
 
+    // GAMES
     var portfolios = $( "#portfolios" );
-    portfolios.empty();
-    
+    portfolios.empty();    
     var keys = Object.keys(portfolio.games);
     for (let index = 0; index < keys.length; index++) {
         const key = keys[index];
@@ -92,4 +95,13 @@ window.addEventListener('DOMContentLoaded', event => {
 
         portfolios.append(buildGame(game, height, cls));
     }
+
+    // SKILLS
+    var skills = $( "#skills" );
+    skills.empty();
+    portfolio.skills.forEach(skill => skills.append (`<p class="w3-wide"><img src="./w3images/${skill.icon}" style="width: 16px;height: 16px; margin-right: 10px;" />${skill.name}</p>
+        <div class="w3-light-grey">
+        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:${skill.value}%">${skill.value}%</div>
+        </div>`)
+    );
 });
