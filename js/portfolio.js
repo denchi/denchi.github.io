@@ -129,6 +129,17 @@ var portfolio = {
             landscape: true
         },
 
+        stealth: {
+            title: 'Stealth Pro',
+            description: "This is a stealth hypercasual game where your goal is to reach your target undetected!",
+            //icon: 'assets/img/icons/candybag.png',
+            screenshots: [
+                'assets/img/screenshots/StealthPro/stealthinc2.mp4',
+                'assets/img/screenshots/StealthPro/screenshot1.png',
+                'assets/img/screenshots/StealthPro/screenshot3.png',
+            ]
+        },
+
         autobrawl: {
             title: 'AutoBrawl 3D',
             description: "Race through amazing 3D levels, compete, and collect as many collectables as you can! This awesome brawler game is built for anyone, anywhere! Test your driving skills and senses and defeat ever more challenging opponents and levels. As you'll progress, you'll earn rewards and unlock the ability to customize your gaming experience to the max.",
@@ -139,16 +150,18 @@ var portfolio = {
                 'assets/img/screenshots/AutoBrawl/screenshot2.png',
             ],
         },
+
         beadpaint: {
             title: 'Bead Paint 3D',
             description: "Drop paintballs into molds. Enjoy Awaome 3D gameplay with Satisfying Color Spreads and Beautiful Drawings. Easy, Relaxing, and Super Satisfying!",
             icon: 'assets/img/icons/beadpaint.png',
             screenshots: [
-                'assets/img/screenshots/BeadPaint/screenshot9.png',
-                'assets/img/screenshots/BeadPaint/screenshot10.png',
-                'assets/img/screenshots/BeadPaint/screenshot16.png',
+                'assets/img/screenshots/BeadPaint/beadpaint.mp4',
+                'assets/img/screenshots/BeadPaint/screenshot17.png',
+                'assets/img/screenshots/BeadPaint/screenshot19.png',
             ]
         },
+
         swipewars: {
             title: 'Swipe Wars!',
             description: "Play through challenging levels and win with your army by Swiping and Sorting the battlefield to your advantage in this beautiful, fun, and easy-to-play 3D puzzle Game.",
@@ -159,26 +172,7 @@ var portfolio = {
                 'assets/img/screenshots/SwipeWars/screenshot4.png',
             ]
         },
-        candybag: {
-            title: 'Candy Bag 3D',
-            description: "Everyone loves candy, and you have the best sweets in town! Customers are lining up to try your sweet stuff and you need to make their dream candy mix come true. Customize the candy mixes and jars to create amazing combinations to make your clients happy. You can do it! Mix it up and make them happy!",
-            icon: 'assets/img/icons/candybag.png',
-            screenshots: [
-                'assets/img/screenshots/CandyBag/screenshot9.png',
-                'assets/img/screenshots/CandyBag/screenshot2.jpg',
-                'assets/img/screenshots/CandyBag/screenshot3.jpg',
-            ]
-        },
-        cubepop: {
-            title: 'Cube Pop',
-            description: "As you progress through the game, you'll encounter more complex puzzles to solve. You might not make it in the first time you play, but a challenge won't stop you.... not you... right?",
-            icon: 'assets/img/icons/cubepop.png',
-            screenshots: [
-                'assets/img/screenshots/CubePop/screenshot6.png',
-                'assets/img/screenshots/CubePop/screenshot7.png',
-                'assets/img/screenshots/CubePop/screenshot3.png',
-            ]
-        },
+
         jellymaze: {
             title: 'Jelly Maze 3D',
             description: "Swipe the jelly cube around cool 3D maps, complete levels, and roll on to new more complicated, dazzling puzzles.",
@@ -189,6 +183,7 @@ var portfolio = {
                 'assets/img/screenshots/JellyMaze3D/screenshot1.png',
             ]
         },
+
         letterrace3d: {
             title: 'Letter Race 3D',
             description: "Test your senses and brain and solve ever more chalenging levels. As you'll progress, you'll earn rewards and unlock the ability to customize your gaming experiance to the max.",
@@ -199,31 +194,7 @@ var portfolio = {
                 'assets/img/screenshots/LetterRaceRunner/screenshot8.png',
             ]
         },
-        pullipop: {
-            title: 'Pullipop: Pull the Pin Game',
-            description: "Pull, push and revolve the pins so solve the puzzles and progress through the game. You won't make it in the first time you play, but a challenge won't stop you.... not you... right?",
-            icon: 'assets/img/icons/pullipop.png',
-            screenshots: [
-                'assets/img/screenshots/Pullipop/screenshot16.png',
-                'assets/img/screenshots/Pullipop/screenshot11.png',
-            ]
-        },
-        puzzlechef: {
-            title: 'Puzzle Chef',
-            description: "Solve amazing puzzles and collect fresh ingredients to make delicious dishes! It may sounds easy, but it gets trickier and you have to be super strategic to become a the most famous chef in the all world!",
-            icon: 'assets/img/icons/puzzlechef.png',
-            screenshots: [
-            'assets/img/screenshots/PuzzleChef/screenshot1.jpg',
-            ]
-        },
-        raisetheduck: {
-            title: 'Raise The Duck',
-            description: "Solve beautifully and stress free levels and unlock incredible skins.",
-            icon: 'assets/img/icons/raisetheduck.png',
-            screenshots: [
-            'assets/img/screenshots/RaiseTheDuck/screenshot1.png',
-            ]
-        },
+
         snaketangle: {
             title: 'Snake Tangle',
             description: "Play through challenging levels and untangle the snakes in this beautiful, fun, and east-to-play 3D puzzle Game.",
@@ -235,16 +206,68 @@ var portfolio = {
             'assets/img/screenshots/RopeTangle/screenshot3.png',
             ]
         },
+
+        candybag: {
+            title: 'Candy Bag 3D',
+            description: "Everyone loves candy, and you have the best sweets in town! Customers are lining up to try your sweet stuff and you need to make their dream candy mix come true. Customize the candy mixes and jars to create amazing combinations to make your clients happy. You can do it! Mix it up and make them happy!",
+            icon: 'assets/img/icons/candybag.png',
+            screenshots: [
+                'assets/img/screenshots/CandyBag/candyjar1.mp4',
+                'assets/img/screenshots/CandyBag/screenshot15.png',
+                'assets/img/screenshots/CandyBag/screenshot14.png',
+            ]
+        },
+
         stairsort3d: {
             title: 'Stair Sort 3D',
             description: "Play through challenging levels and get the ball in the hole by sorting out the stairs in this beautiful, fun, and east-to-play 3D puzzle Game.",
             icon: 'assets/img/icons/stairsort3d.png',
             screenshots: [
-            'assets/img/screenshots/StairSort3D/screenshot20.png',
-            'assets/img/screenshots/StairSort3D/screenshot2.png',
-            'assets/img/screenshots/StairSort3D/screenshot21.png',
+            'assets/img/screenshots/StairSort3D/stairsort1.mp4',
+            'assets/img/screenshots/StairSort3D/screenshot24.png',
+            'assets/img/screenshots/StairSort3D/screenshot25.png',
             ]
         },
+
+        pullipop: {
+            title: 'Pullipop: Pull the Pin Game',
+            description: "Pull, push and revolve the pins so solve the puzzles and progress through the game. You won't make it in the first time you play, but a challenge won't stop you.... not you... right?",
+            icon: 'assets/img/icons/pullipop.png',
+            screenshots: [
+                'assets/img/screenshots/Pullipop/screenshot16.png',
+                'assets/img/screenshots/Pullipop/screenshot11.png',
+            ]
+        },      
+        
+        // cubepop: {
+        //     title: 'Cube Pop',
+        //     description: "As you progress through the game, you'll encounter more complex puzzles to solve. You might not make it in the first time you play, but a challenge won't stop you.... not you... right?",
+        //     icon: 'assets/img/icons/cubepop.png',
+        //     screenshots: [
+        //         'assets/img/screenshots/CubePop/screenshot6.png',
+        //         'assets/img/screenshots/CubePop/screenshot7.png',
+        //         'assets/img/screenshots/CubePop/screenshot3.png',
+        //     ]
+        // },           
+        
+        // puzzlechef: {
+        //     title: 'Puzzle Chef',
+        //     description: "Solve amazing puzzles and collect fresh ingredients to make delicious dishes! It may sounds easy, but it gets trickier and you have to be super strategic to become a the most famous chef in the all world!",
+        //     icon: 'assets/img/icons/puzzlechef.png',
+        //     screenshots: [
+        //     'assets/img/screenshots/PuzzleChef/screenshot1.jpg',
+        //     ]
+        // },
+        
+        // raisetheduck: {
+        //     title: 'Raise The Duck',
+        //     description: "Solve beautifully and stress free levels and unlock incredible skins.",
+        //     icon: 'assets/img/icons/raisetheduck.png',
+        //     screenshots: [
+        //     'assets/img/screenshots/RaiseTheDuck/screenshot1.png',
+        //     ]
+        // },
+                
         // terminalrush: {
         //     title: 'Stair Sort 3D',
         //     description: "Play through challenging levels and get the ball in the hole by sorting out the stairs in this beautiful, fun, and east-to-play 3D puzzle Game.",
@@ -255,6 +278,7 @@ var portfolio = {
         //     'assets/img/screenshots/StairSort3D/screenshot21.png',
         //     ]
         // },
+        
         // sortandmerge: {
         //     title: 'Stair Sort 3D',
         //     description: "Play through challenging levels and get the ball in the hole by sorting out the stairs in this beautiful, fun, and east-to-play 3D puzzle Game.",
@@ -265,6 +289,7 @@ var portfolio = {
         //     'assets/img/screenshots/StairSort3D/screenshot21.png',
         //     ]
         // },
+        
         // unweave: {
         //     title: 'Stair Sort 3D',
         //     description: "Play through challenging levels and get the ball in the hole by sorting out the stairs in this beautiful, fun, and east-to-play 3D puzzle Game.",
