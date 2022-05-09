@@ -88,6 +88,9 @@ var portfolio = {
         brinkhearts: {
             title: 'Brink Of Consciousness - The Lonely Hearts Murderer',
             description: "A hidden object puzzle adventure game available for mobile and desktop devices",
+            urls: {
+                steam: 'https://store.steampowered.com/app/327370/Brink_of_Consciousness_The_Lonely_Hearts_Murders/',
+            },
             url: 'https://store.steampowered.com/app/327370/Brink_of_Consciousness_The_Lonely_Hearts_Murders/',
             screenshots: [
                 'assets/img/screenshots/BrinkHearts/p1a.jpg',
@@ -98,8 +101,10 @@ var portfolio = {
 
         nearwood: {
             title: 'Nearwood',
-            description: "A hidden object puzzle adventure game available for mobile and desktop devices",
-            url: 'https://store.steampowered.com/app/286540/Nearwood__Collectors_Edition/',
+            description: "A hidden object puzzle adventure game available for mobile and desktop devices",            
+            urls: {
+                steam: 'https://store.steampowered.com/app/286540/Nearwood__Collectors_Edition/',
+            },
             screenshots: [
                 'assets/img/screenshots/Nearwood/p2.jpg',
                 'assets/img/screenshots/Nearwood/p3.jpg',
@@ -109,8 +114,10 @@ var portfolio = {
 
         shadowseekers: {
             title: 'Shadow Seekers',
-            description: "A Free-To-Play RPG with online multiplayer elements",
-            url: 'https://play.google.com/store/apps/details?id=com.magicindie.saga',
+            description: "A Free-To-Play RPG with online multiplayer elements",            
+            urls: {
+                android: 'https://play.google.com/store/apps/details?id=com.magicindie.saga',
+            },
             screenshots: [
                 'assets/img/screenshots/shadowseekers/screen-0.jpg',
                 'assets/img/screenshots/shadowseekers/screen-2.jpg',
@@ -123,6 +130,9 @@ var portfolio = {
             title: 'Pizza Fortress',
             description: "A runner / parkour - like pizza delivery game",
             url: 'https://play.google.com/store/apps/details?id=com.DeadByGravity.PainsCastle',
+            urls: {
+                android: 'https://play.google.com/store/apps/details?id=com.DeadByGravity.PainsCastle',
+            },
 
             screenshots: [
                 'assets/img/screenshots/PizzaFortress/pizzafortress.mp4',
@@ -193,6 +203,9 @@ var portfolio = {
             description: "Swipe the jelly cube around cool 3D maps, complete levels, and roll on to new more complicated, dazzling puzzles.",
             icon: 'assets/img/icons/jellymaze.png',
             url: 'https://play.google.com/store/apps/details?id=com.funorama.JellyMaze3D',
+            urls: {
+                android: 'https://play.google.com/store/apps/details?id=com.funorama.JellyMaze3D',
+            },
             screenshots: [
                 'assets/img/screenshots/JellyMaze3D/jellymaze.mp4',
                 'assets/img/screenshots/JellyMaze3D/screenshot3.png',
@@ -205,6 +218,9 @@ var portfolio = {
             description: "Test your senses and brain and solve ever more chalenging levels. As you'll progress, you'll earn rewards and unlock the ability to customize your gaming experiance to the max.",
             icon: 'assets/img/icons/letterrace3d.png',
             url: 'https://play.google.com/store/apps/details?id=com.Funorama.LetterRaceRunner',
+            urls: {
+                android: 'https://play.google.com/store/apps/details?id=com.Funorama.LetterRaceRunner',
+            },
             screenshots: [
                 'assets/img/screenshots/LetterRaceRunner/letterracerunner.mp4',
                 'assets/img/screenshots/LetterRaceRunner/screenshot9.png',
@@ -229,6 +245,9 @@ var portfolio = {
             description: "Everyone loves candy, and you have the best sweets in town! Customers are lining up to try your sweet stuff and you need to make their dream candy mix come true. Customize the candy mixes and jars to create amazing combinations to make your clients happy. You can do it! Mix it up and make them happy!",
             icon: 'assets/img/icons/candybag.png',
             url: 'https://play.google.com/store/apps/details?id=com.Funorama.CandyJar3D',
+            urls: {
+                android: 'https://play.google.com/store/apps/details?id=com.Funorama.CandyJar3D',
+            },
             screenshots: [
                 'assets/img/screenshots/CandyBag/candyjar1.mp4',
                 'assets/img/screenshots/CandyBag/screenshot15.png',
@@ -241,6 +260,9 @@ var portfolio = {
             description: "Play through challenging levels and get the ball in the hole by sorting out the stairs in this beautiful, fun, and east-to-play 3D puzzle Game.",
             icon: 'assets/img/icons/stairsort3d.png',
             url: 'https://play.google.com/store/apps/details?id=com.Funorama.StairSort3D',
+            urls: {
+                android: 'https://play.google.com/store/apps/details?id=com.Funorama.StairSort3D',
+            },
             screenshots: [
             'assets/img/screenshots/StairSort3D/stairsort1.mp4',
             'assets/img/screenshots/StairSort3D/screenshot24.png',
@@ -253,6 +275,9 @@ var portfolio = {
             description: "Pull, push and revolve the pins so solve the puzzles and progress through the game. You won't make it in the first time you play, but a challenge won't stop you.... not you... right?",
             icon: 'assets/img/icons/pullipop.png',
             url: 'https://play.google.com/store/apps/details?id=com.Funorama.Pullipop',
+            urls: {
+                android: 'https://play.google.com/store/apps/details?id=com.Funorama.Pullipop',
+            },
             screenshots: [
                 'assets/img/screenshots/Pullipop/screenshot16.png',
                 'assets/img/screenshots/Pullipop/screenshot11.png',

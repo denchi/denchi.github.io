@@ -60,6 +60,27 @@
     cursor: pointer;
   }
 
+  .w3-grayscale {
+    filter: url(filters.svg#grayscale);
+    /* Firefox 3.5+ */
+    filter: rgb(221, 221, 221);
+    /* IE6-9 */
+    -webkit-filter: grayscale(0.75);
+    /* Google Chrome & Safari 6+ */
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    
+    width:100%;
+    object-fit: cover;
+  }
+
+  .w3-grayscale:hover {
+    filter: none;
+    -webkit-filter: none;
+    width:100%;
+    object-fit: cover;
+  }  
+
   /* Turn off parallax scrolling for tablets and phones */
   @media only screen and (max-device-width: 1600px) {
 
@@ -111,8 +132,10 @@
   
   <!-- Skills -->
   <p class="w3-large w3-center w3-padding-16">I'm really good at:</p>  
+
   <!-- Skills DIV-->
   <div class="w3-content w3-container w3-padding-64" id="skills"></div>
+  
   <!-- Second Parallax Image with Portfolio Text -->
   <div class="bgimg-2 w3-display-container w3-opacity-min">
     <div class="w3-display-middle">
@@ -120,11 +143,13 @@
     </div>
   </div>
 
-  <!-- Container (Portfolio Section) -->
   <div class="w3-content w3-container w3-padding-64" id="portfolio">
     <h3 class="w3-center">MY WORK</h3>
     <p class="w3-center"><em>Here are some of the projects I was involved in.<br> Click on the images to make them
-        bigger</em></p><br>
+        bigger</em>
+    </p>
+    
+    <br>
 
     <div id="portfolios"></div>
 
@@ -173,7 +198,6 @@
             <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email:
             <span id="email2"></span><br>
           </div>
-          <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
 
           <a class="w3-button w3-black w3-section" href="mailto: denis.chiriac@gmail.com" id="email3">
             <i class="fa fa-paper-plane"></i> SEND MESSAGE
@@ -191,58 +215,11 @@
           class="w3-hover-text-green">w3.css</a></p>
     </footer>
 
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/portfolio.js" type="text/javascript"></script>
-    <script src="js/autolayout.js" type="text/javascript"></script>
-    <script>
-      // Modal Image Gallery
-      function onClick(element) {
-        document.getElementById("img01").src = element.src;
-        document.getElementById("modal01").style.display = "block";
-        var captionText = document.getElementById("caption");
-        captionText.innerHTML = element.alt;
-      }
+  </div>
 
-      function onClickVid(originalVideo) {
-        var originalSource = originalVideo.children[0];        
-        var src = originalSource.src;
-
-        var destinationVideo = document.getElementById("vid02");
-        var destinationSource = destinationVideo.children[0];
-
-        destinationSource.setAttribute('src', src);
-
-        var modal = document.getElementById("modal02");
-        modal.style.display = "block";
-
-        var captionText = document.getElementById("caption");
-        captionText.innerHTML = originalVideo.alt;
-
-        destinationVideo.load();
-        destinationVideo.play();
-      }
-
-      // Change style of navbar on scroll
-      window.onscroll = function () { myFunction() };
-      function myFunction() {
-        var navbar = document.getElementById("myNavbar");
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-          navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-        } else {
-          navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-        }
-      }
-
-      // Used to toggle the menu on small screens when clicking on the menu button
-      function toggleFunction() {
-        var x = document.getElementById("navDemo");
-        if (x.className.indexOf("w3-show") == -1) {
-          x.className += " w3-show";
-        } else {
-          x.className = x.className.replace(" w3-show", "");
-        }
-      }
-    </script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/portfolio.js" type="text/javascript"></script>
+  <script src="js/autolayout.js" type="text/javascript"></script>
 
 </body>
 

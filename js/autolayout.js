@@ -1,24 +1,24 @@
 
 function buildGame(game, height = 'height: 450px;', cls = 'm3')
 {
-    var colImg = (fileName) => {
+    const colImg = (fileName) => {
         return `<div class="w3-col ${cls}">
-            <img src="${fileName}" style="width:100%;object-fit: cover;" onclick="onClick(this)" class="w3-hover-opacity" >
+            <img src="${fileName}" onclick="onClick(this)" class="w3-grayscale w3-hover-opacity" >
         </div>`;
     }
 
-    var colVid = (fileName) => {
+    const colVid = (fileName) => {
         return `<div class="w3-col ${cls}">
-            <video class="w3-hover-opacity" autoplay muted loop style="width:100%;object-fit: cover;" onclick="onClickVid(this)" ><source src="${fileName}" type="video/mp4"></video>
+            <video class="w3-grayscale w3-hover-opacity" autoplay muted loop onclick="onClickVid(this)" ><source src="${fileName}" type="video/mp4"></video>
         </div>`;
     }
 
-    var col = (fileName) => {
+    const col = (fileName) => {
         var extension = fileName.split('.').pop();
         return extension != 'mp4' ? colImg(fileName) : colVid(fileName);
     }
     
-    var sum = (fileNames) => {
+    const sum = (fileNames) => {
         var html = "";
         fileNames.forEach(fileName => {
             html += col(fileName) + "\n";
@@ -26,13 +26,13 @@ function buildGame(game, height = 'height: 450px;', cls = 'm3')
         return html;
     }
 
-    var row = (fileNames) => {
+    const row = (fileNames) => {
         return `<div class="w3-row-padding w3-center w3-section">
             ${sum(fileNames)}
         </div>`
     }
 
-    var rowByLandscape = (fileNames, landscape) => {
+    const rowByLandscape = (fileNames, landscape) => {
         var html = "";
         if (landscape && fileNames.length > 2)
         {
@@ -56,14 +56,82 @@ function buildGame(game, height = 'height: 450px;', cls = 'm3')
         return html
     }
 
+    const platformKeyToTitle = {
+        'android': "Link to Google Play",
+        'ios': "Link to Apple Store",
+        'steam': "Link to Steam",
+    }
+
+    const buildLinks = (urls) => {        
+        var str = "";
+        if (urls != null)
+        {
+            var keys = Object.keys(urls);
+            for (let index = 0; index < keys.length; index++) {
+                const key = keys[index];
+                const value = urls[key];
+                str += `<a href="${value}" target="blank">${platformKeyToTitle[key]}</a>`;
+            }
+        }
+        return str;
+    }
+
     return `
-    <!-- ${game.title} -->
-    <p class="w3-center">
-      <b>${game.title}</b> ${game.url != null ? '<a href="' + game.url + '" target="blank">Link</a>' : ""}<br/><em>${game.description}</em>
-    </p>
-    ${rowByLandscape(game.screenshots, game.landscape)}`;
+        <!-- ${game.title} -->
+        <p class="w3-center">
+        <b>${game.title}</b><br/>${buildLinks(game.urls)}<br/><em>${game.description}</em>
+        </p>
+        ${rowByLandscape(game.screenshots, game.landscape)}`;
 }
 
+function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+}
+
+function onClickVid(originalVideo) {
+    var originalSource = originalVideo.children[0];        
+    var src = originalSource.src;
+
+    var destinationVideo = document.getElementById("vid02");
+    var destinationSource = destinationVideo.children[0];
+
+    destinationSource.setAttribute('src', src);
+
+    var modal = document.getElementById("modal02");
+    modal.style.display = "block";
+
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = originalVideo.alt;
+
+    destinationVideo.load();
+    destinationVideo.play();
+}
+
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// EVENTS
+
+window.onscroll = function () { myFunction() };
+  
 window.addEventListener('DOMContentLoaded', event => {
     
     // TITLE
@@ -99,9 +167,14 @@ window.addEventListener('DOMContentLoaded', event => {
     // SKILLS
     var skills = $( "#skills" );
     skills.empty();
-    portfolio.skills.forEach(skill => skills.append (`<p class="w3-wide"><img src="./w3images/${skill.icon}" style="width: 16px;height: 16px; margin-right: 10px;" />${skill.name}</p>
+    portfolio.skills.forEach(skill => skills.append (
+        `<p class="w3-wide">
+            ${skill.name}
+        </p>
         <div class="w3-light-grey">
-        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:${skill.value}%">${skill.value}%</div>
+            <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:${skill.value}%">
+                ${skill.value}%
+            </div>
         </div>`)
     );
 });
