@@ -138,6 +138,18 @@
       </div>
     </div>
 
+    <!-- Modal for full size images on click-->
+    <div id="modal02" class="w3-modal w3-black" onclick="this.style.display='none'">
+      <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
+          class="fa fa-remove"></i></span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <video id="vid02" class="w3-hover-opacity" autoplay muted loop style="height:90%;object-fit: cover;">
+          <source src="" type="video/mp4">
+        </video>
+        <p id="caption" class="w3-opacity w3-large"></p>
+      </div>
+    </div>
+
     <!-- Third Parallax Image with Portfolio Text -->
     <div class="bgimg-3 w3-display-container w3-opacity-min">
       <div class="w3-display-middle">
@@ -189,6 +201,25 @@
         document.getElementById("modal01").style.display = "block";
         var captionText = document.getElementById("caption");
         captionText.innerHTML = element.alt;
+      }
+
+      function onClickVid(originalVideo) {
+        var originalSource = originalVideo.children[0];        
+        var src = originalSource.src;
+
+        var destinationVideo = document.getElementById("vid02");
+        var destinationSource = destinationVideo.children[0];
+
+        destinationSource.setAttribute('src', src);
+
+        var modal = document.getElementById("modal02");
+        modal.style.display = "block";
+
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = originalVideo.alt;
+
+        destinationVideo.load();
+        destinationVideo.play();
       }
 
       // Change style of navbar on scroll

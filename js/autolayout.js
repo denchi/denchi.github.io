@@ -3,14 +3,14 @@ function buildGame(game, height = 'height: 450px;', cls = 'm3')
 {
     var colImg = (fileName) => {
         return `<div class="w3-col ${cls}">
-        <img src="${fileName}" style="width:100%;object-fit: cover;" onclick="onClick(this)" class="w3-hover-opacity" >
-      </div>`;
+            <img src="${fileName}" style="width:100%;object-fit: cover;" onclick="onClick(this)" class="w3-hover-opacity" >
+        </div>`;
     }
 
     var colVid = (fileName) => {
         return `<div class="w3-col ${cls}">
-        <video class="w3-hover-opacity" autoplay muted loop style="width:100%;object-fit: cover;" onclick="onClick(this)" ><source src="${fileName}" type="video/mp4"></video>
-      </div>`;
+            <video class="w3-hover-opacity" autoplay muted loop style="width:100%;object-fit: cover;" onclick="onClickVid(this)" ><source src="${fileName}" type="video/mp4"></video>
+        </div>`;
     }
 
     var col = (fileName) => {
@@ -59,7 +59,7 @@ function buildGame(game, height = 'height: 450px;', cls = 'm3')
     return `
     <!-- ${game.title} -->
     <p class="w3-center">
-      <b>${game.title}</b><br/><em>${game.description}</em>
+      <b>${game.title}</b> ${game.url != null ? '<a href="' + game.url + '" target="blank">Link</a>' : ""}<br/><em>${game.description}</em>
     </p>
     ${rowByLandscape(game.screenshots, game.landscape)}`;
 }

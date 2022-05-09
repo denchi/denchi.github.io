@@ -5,21 +5,19 @@ var portfolio = {
     avatar: 'assets/img/avatars/denis.png',
     description: [
     
-    `So I finally decided to make a portofolio. Nonetheless I have a lot of other projects, I only managed to publish
-      information about the ones allready released or the ones I have at least a prototype. I also have a lot of
-      projects for Android / iOS platforms, VR and AR though I can not post because of NDA and agreements.`,
+    // `So I finally decided to make a portofolio. Nonetheless I have a lot of other projects, I only managed to publish
+    //   information about the ones allready released or the ones I have at least a prototype. I also have a lot of
+    //   projects for Android / iOS platforms, VR and AR though I can not post because of NDA and agreements.`,
 
 
-    `I'm a passionate game and application developer. Also like digital drawing and music creation. Most of my
-      personal projects were drawn by me.`,
+    `I'm a passionate game and application developer, experienced in unity game development with AR/VR, multiplayer, advertising, analytics, purchasing and other packages. I also like digital drawing and music creation.`,
 
 
-    `My primary programming language is C#. I used it for mostly Unity scripting and Windows Forms (for tools). I'm
+    `My primary games programming language is C#. I'm
       also experienced with Java (for Android native development). I often use javascript (jQuery, Angular.js and
-      React.js) for web development. Have experience with Objective-C and Swift for iOS.`,
+      React.js) for web development and laravel, python (for backend development). Have experience with Objective-C and Swift for iOS. Using mostly flutter for mobile/app develepment for the last years`,
 
-
-    `My native language is romanian, but I also speak english and russian (Learning spanish).`,
+    `My native language is romanian, but I also speak english and russian (also learning spanish).`,
     
     `I like running, hiking and surfing`,
     ],
@@ -62,10 +60,16 @@ var portfolio = {
             //icon: 'photoshop.png'
         },
         {
-            name: 'Flutter',
-            exp: '> 1 year(s)',
-            value: 60,
-            //icon: 'flutter.png'
+            name: 'Spine',
+            exp: '> 2 years',
+            value: 80,
+            //icon: 'photoshop.png'
+        },
+        {
+            name: '3D Studio Max',
+            exp: '> 8 year(s)',
+            value: 90,
+            //icon: 'blender.png'
         },
         {
             name: 'Blender',
@@ -73,11 +77,18 @@ var portfolio = {
             value: 50,
             //icon: 'blender.png'
         },
+        {
+            name: 'Flutter',
+            exp: '> 1 year(s)',
+            value: 60,
+            //icon: 'flutter.png'
+        },
     ],
     games: {
         brinkhearts: {
             title: 'Brink Of Consciousness - The Lonely Hearts Murderer',
             description: "A hidden object puzzle adventure game available for mobile and desktop devices",
+            url: 'https://store.steampowered.com/app/327370/Brink_of_Consciousness_The_Lonely_Hearts_Murders/',
             screenshots: [
                 'assets/img/screenshots/BrinkHearts/p1a.jpg',
                 'assets/img/screenshots/BrinkHearts/screenshot2.jpg',
@@ -88,6 +99,7 @@ var portfolio = {
         nearwood: {
             title: 'Nearwood',
             description: "A hidden object puzzle adventure game available for mobile and desktop devices",
+            url: 'https://store.steampowered.com/app/286540/Nearwood__Collectors_Edition/',
             screenshots: [
                 'assets/img/screenshots/Nearwood/p2.jpg',
                 'assets/img/screenshots/Nearwood/p3.jpg',
@@ -98,6 +110,7 @@ var portfolio = {
         shadowseekers: {
             title: 'Shadow Seekers',
             description: "A Free-To-Play RPG with online multiplayer elements",
+            url: 'https://play.google.com/store/apps/details?id=com.magicindie.saga',
             screenshots: [
                 'assets/img/screenshots/shadowseekers/screen-0.jpg',
                 'assets/img/screenshots/shadowseekers/screen-2.jpg',
@@ -109,6 +122,8 @@ var portfolio = {
         pizzafortress: {
             title: 'Pizza Fortress',
             description: "A runner / parkour - like pizza delivery game",
+            url: 'https://play.google.com/store/apps/details?id=com.DeadByGravity.PainsCastle',
+
             screenshots: [
                 'assets/img/screenshots/PizzaFortress/pizzafortress.mp4',
                 'assets/img/screenshots/PizzaFortress/screenshot63.png',
@@ -177,6 +192,7 @@ var portfolio = {
             title: 'Jelly Maze 3D',
             description: "Swipe the jelly cube around cool 3D maps, complete levels, and roll on to new more complicated, dazzling puzzles.",
             icon: 'assets/img/icons/jellymaze.png',
+            url: 'https://play.google.com/store/apps/details?id=com.funorama.JellyMaze3D',
             screenshots: [
                 'assets/img/screenshots/JellyMaze3D/jellymaze.mp4',
                 'assets/img/screenshots/JellyMaze3D/screenshot3.png',
@@ -188,6 +204,7 @@ var portfolio = {
             title: 'Letter Race 3D',
             description: "Test your senses and brain and solve ever more chalenging levels. As you'll progress, you'll earn rewards and unlock the ability to customize your gaming experiance to the max.",
             icon: 'assets/img/icons/letterrace3d.png',
+            url: 'https://play.google.com/store/apps/details?id=com.Funorama.LetterRaceRunner',
             screenshots: [
                 'assets/img/screenshots/LetterRaceRunner/letterracerunner.mp4',
                 'assets/img/screenshots/LetterRaceRunner/screenshot9.png',
@@ -211,6 +228,7 @@ var portfolio = {
             title: 'Candy Bag 3D',
             description: "Everyone loves candy, and you have the best sweets in town! Customers are lining up to try your sweet stuff and you need to make their dream candy mix come true. Customize the candy mixes and jars to create amazing combinations to make your clients happy. You can do it! Mix it up and make them happy!",
             icon: 'assets/img/icons/candybag.png',
+            url: 'https://play.google.com/store/apps/details?id=com.Funorama.CandyJar3D',
             screenshots: [
                 'assets/img/screenshots/CandyBag/candyjar1.mp4',
                 'assets/img/screenshots/CandyBag/screenshot15.png',
@@ -222,6 +240,7 @@ var portfolio = {
             title: 'Stair Sort 3D',
             description: "Play through challenging levels and get the ball in the hole by sorting out the stairs in this beautiful, fun, and east-to-play 3D puzzle Game.",
             icon: 'assets/img/icons/stairsort3d.png',
+            url: 'https://play.google.com/store/apps/details?id=com.Funorama.StairSort3D',
             screenshots: [
             'assets/img/screenshots/StairSort3D/stairsort1.mp4',
             'assets/img/screenshots/StairSort3D/screenshot24.png',
@@ -233,6 +252,7 @@ var portfolio = {
             title: 'Pullipop: Pull the Pin Game',
             description: "Pull, push and revolve the pins so solve the puzzles and progress through the game. You won't make it in the first time you play, but a challenge won't stop you.... not you... right?",
             icon: 'assets/img/icons/pullipop.png',
+            url: 'https://play.google.com/store/apps/details?id=com.Funorama.Pullipop',
             screenshots: [
                 'assets/img/screenshots/Pullipop/screenshot16.png',
                 'assets/img/screenshots/Pullipop/screenshot11.png',
