@@ -149,7 +149,7 @@ window.addEventListener('DOMContentLoaded', event => {
     $( "#phone" ).text(portfolio.contact.phone);
 
     // LINKS
-    $( "#links" ).append(portfolio.contact.links.map(link => `<a href="${link.url}"><i class="fa ${link.icon} w3-hover-opacity"></i></a>`).join('\n') )
+    $( "#links" ).append(portfolio.contact.links.map(link => `<a href="${link.url}" target="blank"><i class="fa ${link.icon} w3-hover-opacity"></i></a>`).join('\n') )
 
     // GAMES
     var portfolios = $( "#portfolios" );

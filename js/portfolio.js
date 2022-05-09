@@ -43,6 +43,10 @@ var portfolio = {
             {
                 icon: 'fa-linkedin',
                 url: 'https://www.linkedin.com/in/denis-chiriac-3175156a/'
+            },
+            {
+                icon: 'fa-github',
+                url: 'https://github.com/denchi'
             }
         ]
     },
