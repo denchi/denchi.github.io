@@ -2,7 +2,7 @@
 
 Personal portfolio site for Denis Chiriac. The live site is [https://denchi.github.io/](https://denchi.github.io/).
 
-The page is data-driven. `index.html` is the shell; `js/autolayout.js` reads the `portfolio` object in [`js/portfolio.js`](js/portfolio.js) and fills in the about text, contact details, skills, and projects.
+Portfolio content lives in [`js/portfolio.js`](js/portfolio.js); `js/autolayout.js` renders it into the page.
 
 ## Add or edit a project
 
